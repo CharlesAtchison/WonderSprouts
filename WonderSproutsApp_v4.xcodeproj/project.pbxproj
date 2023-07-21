@@ -11,6 +11,11 @@
 		630449502A69FFEC00AA5CEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304494F2A69FFEC00AA5CEF /* ContentView.swift */; };
 		630449522A69FFEE00AA5CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630449512A69FFEE00AA5CEF /* Assets.xcassets */; };
 		630449562A69FFEE00AA5CEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630449552A69FFEE00AA5CEF /* Preview Assets.xcassets */; };
+		6304495D2A6A00B800AA5CEF /* StoryBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304495C2A6A00B800AA5CEF /* StoryBuilderView.swift */; };
+		6304495F2A6A00FC00AA5CEF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304495E2A6A00FC00AA5CEF /* SettingsView.swift */; };
+		630449612A6A010500AA5CEF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630449602A6A010500AA5CEF /* ProfileView.swift */; };
+		630449632A6A02C900AA5CEF /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630449622A6A02C900AA5CEF /* CustomPickerView.swift */; };
+		630449652A6A031500AA5CEF /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630449642A6A031500AA5CEF /* AppTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		630449512A69FFEE00AA5CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		630449532A69FFEE00AA5CEF /* WonderSproutsApp_v4.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WonderSproutsApp_v4.entitlements; sourceTree = "<group>"; };
 		630449552A69FFEE00AA5CEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6304495C2A6A00B800AA5CEF /* StoryBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBuilderView.swift; sourceTree = "<group>"; };
+		6304495E2A6A00FC00AA5CEF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		630449602A6A010500AA5CEF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		630449622A6A02C900AA5CEF /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		630449642A6A031500AA5CEF /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				6304494D2A69FFEC00AA5CEF /* WonderSproutsApp_v4App.swift */,
+				6304495C2A6A00B800AA5CEF /* StoryBuilderView.swift */,
 				6304494F2A69FFEC00AA5CEF /* ContentView.swift */,
+				630449642A6A031500AA5CEF /* AppTheme.swift */,
+				630449622A6A02C900AA5CEF /* CustomPickerView.swift */,
+				6304495E2A6A00FC00AA5CEF /* SettingsView.swift */,
+				630449602A6A010500AA5CEF /* ProfileView.swift */,
 				630449512A69FFEE00AA5CEF /* Assets.xcassets */,
 				630449532A69FFEE00AA5CEF /* WonderSproutsApp_v4.entitlements */,
 				630449542A69FFEE00AA5CEF /* Preview Content */,
@@ -139,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630449652A6A031500AA5CEF /* AppTheme.swift in Sources */,
 				630449502A69FFEC00AA5CEF /* ContentView.swift in Sources */,
+				6304495F2A6A00FC00AA5CEF /* SettingsView.swift in Sources */,
+				630449612A6A010500AA5CEF /* ProfileView.swift in Sources */,
+				630449632A6A02C900AA5CEF /* CustomPickerView.swift in Sources */,
+				6304495D2A6A00B800AA5CEF /* StoryBuilderView.swift in Sources */,
 				6304494E2A69FFEC00AA5CEF /* WonderSproutsApp_v4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
