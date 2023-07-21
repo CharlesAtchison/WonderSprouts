@@ -93,6 +93,7 @@ struct ContentView: View {
                                 Text(button.title)
                                     .padding() // You can adjust this padding for the buttons
                             }
+                            .navigationBarBackButtonHidden(true)
                         }
                         .buttonStyle(BigButtonStyle())
                     }

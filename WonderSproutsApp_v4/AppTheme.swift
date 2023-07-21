@@ -113,11 +113,11 @@ struct CustomTextModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .fontWeight(.semibold)
-            .foregroundColor(Color.white)
+            .foregroundColor(Color("textColor"))
             .font(.title2)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
             .padding()
-            .background(selectedValue == value ? Color("buttonColor") : Color("selectedButtonColor"))
+            .background(selectedValue == value ? Color("selectedButtonColor") : Color("buttonColor"))
             .cornerRadius(30)
             .shadow(color: .gray, radius: 10, x: 0, y: 0)
     }

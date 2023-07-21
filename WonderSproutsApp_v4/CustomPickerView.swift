@@ -26,7 +26,7 @@ struct CustomPickerView: View {
                 Text(title)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("textColor"))
                     .padding(.top, 20)  // Adjusted padding for the title
                 
                 Spacer()
@@ -41,11 +41,11 @@ struct CustomPickerView: View {
                                 }) {
                                     Text(value)
                                         .fontWeight(.semibold)
-                                        .foregroundColor(Color.white)
+                                        .foregroundColor(Color("textColor"))
                                         .font(.title2)
                                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
                                         .padding()
-                                        .background(self.selectedValue == value ? Color("buttonColor") : Color("selectedButtonColor"))
+                                        .background(self.selectedValue == value ? Color("selectedButtonColor") : Color("buttonColor"))
                                         .cornerRadius(30)
                                         .shadow(color: .gray, radius: 10, x: 0, y: 0)
                                 }
@@ -103,9 +103,9 @@ struct ButtonModifier: ViewModifier {
         content
             .fontWeight(.semibold)
             .font(.title2)
-            .foregroundColor(.white)
+            .foregroundColor(Color("textColor"))
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
-            .background(Color.blue)
+            .background(Color("buttonColor"))
             .cornerRadius(30)
             .shadow(color: .gray, radius: 10, x: 0, y: 0)
     }

@@ -51,7 +51,8 @@ struct StoryBuilderView: View {
                     VStack {
                         Text("Story Builder")
                             .font(.title)
-                            .padding(.top, 5) // Adjust to move the title closer or further from the top
+                            .padding(.top, 5)
+                            .foregroundColor(Color("textColor"))// Adjust to move the title closer or further from the top
                         Spacer() // Push the title to the top
                     }
                     
