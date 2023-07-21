@@ -100,7 +100,7 @@ struct BigButtonStyle: ButtonStyle {
             .padding()
             .background(Color("buttonColor"))
             .cornerRadius(25)
-            .shadow(radius: CGFloat(2), x: CGFloat(0), y: CGFloat(2))
+            .shadow(color: Color("selectedButtonColor"), radius: 10, x: 0, y: 0)
             .scaleEffect(configuration.isPressed ? CGFloat(1.2) : 1.0)
             .animation(.easeInOut)
     }
@@ -119,7 +119,7 @@ struct CustomTextModifier: ViewModifier {
             .padding()
             .background(selectedValue == value ? Color("selectedButtonColor") : Color("buttonColor"))
             .cornerRadius(30)
-            .shadow(color: .gray, radius: 10, x: 0, y: 0)
+            .shadow(color: Color("selectedButtonColor"), radius: 10, x: 0, y: 0)
     }
 }
 

@@ -47,7 +47,7 @@ struct CustomPickerView: View {
                                         .padding()
                                         .background(self.selectedValue == value ? Color("selectedButtonColor") : Color("buttonColor"))
                                         .cornerRadius(30)
-                                        .shadow(color: .gray, radius: 10, x: 0, y: 0)
+                                        .shadow(color: Color("selectedButtonColor"), radius: 10, x: 0, y: 0)
                                 }
                             }
                         }
@@ -107,7 +107,7 @@ struct ButtonModifier: ViewModifier {
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
             .background(Color("buttonColor"))
             .cornerRadius(30)
-            .shadow(color: .gray, radius: 10, x: 0, y: 0)
+            .shadow(color: Color("selectedButtonColor"), radius: 10, x: 0, y: 0)
     }
 }
 
