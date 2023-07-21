@@ -5,7 +5,6 @@
 //  Created by Charles Atchison on 7/20/23.
 //
 
-import SwiftUI
 
 import SwiftUI
 
@@ -28,7 +27,7 @@ struct CustomPickerView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .padding(.top, 50)
+                    .padding(.top, 20)  // Adjusted padding for the title
                 
                 Spacer()
 
@@ -52,30 +51,42 @@ struct CustomPickerView: View {
                                 }
                             }
                         }
-                        .padding(.bottom, 0)
+                        .padding(.bottom, 20)
                     }
                 }
                 
-                Spacer()
-
-                // "OK" button at the bottom
-                Button(action: {
-                    print("OK Button Pressed!")
-                    self.presentationMode.wrappedValue.dismiss()
-                }) {
-                    Text("OK")
-                        .fontWeight(.semibold)
-                        .font(.title2)
-                        .foregroundColor(.white)
-                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
-                        .background(Color.blue)
-                        .cornerRadius(30)
-                        .padding(.horizontal, 50)
-                        .padding(.bottom, 50)
+                HStack(spacing: 20) {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("Back")
+                            .modifier(ButtonModifier())
+                    }
+                    
+                    Button(action: {
+                        print("Create my own!")
+                    }) {
+                        Text("Create my own!")
+                            .modifier(ButtonModifier())
+                            .frame(minWidth: 200)  // Adjusted width for the middle button
+                            .padding(.horizontal, 10) // Adjusted padding for the longer text
+                    }
+                    
+                    Button(action: {
+                        print("OK Button Pressed!")
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("OK")
+                            .modifier(ButtonModifier())
+                    }
                 }
+                .padding(.horizontal, 10)
+                .padding(.bottom, 20)
             }
-        }
+            .edgesIgnoringSafeArea(.bottom)  // Making the VStack ignore the bottom safe area
+        }.navigationBarBackButtonHidden(true)
     }
+
     
     private func buttonTapped(value: String) {
         if selectedValue == value {
@@ -87,6 +98,18 @@ struct CustomPickerView: View {
     }
 }
 
+struct ButtonModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .fontWeight(.semibold)
+            .font(.title2)
+            .foregroundColor(.white)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
+            .background(Color.blue)
+            .cornerRadius(30)
+            .shadow(color: .gray, radius: 10, x: 0, y: 0)
+    }
+}
 
 struct CustomPickerView_Previews: PreviewProvider {
     @State static private var dummySelectedValue: String? = nil
