@@ -57,26 +57,28 @@ struct ContentView: View {
                                 Button(action: {
                                     // Placeholder for button action
                                 }) {
-                                    VStack {
-                                        // Title for each story
-                                        Text("Popular Story Num: \(item)")
-                                            .font(.headline) // Applying a headline font style
-                                            .padding(.bottom, 5) // Space below the title
-
-                                        // Story image
-                                        Image("ws_logo")
-                                            .resizable() // Makes the image resizable
-                                            .scaledToFit() // Scales the image to fit within its frame
-                                            .frame(width: 150)  // Sets a fixed width for the image
-
-                                        // Story description
-                                        Text("This is a brief description of the popular story number \(item).")
-                                            .font(.footnote) // Applying a footnote font style
-                                            .padding(.top, 5) // Space above the description
-                                            .frame(width: 150) // Fixes the width to enable text wrapping
+                                    NavigationLink(destination: StoryView()) {
+                                        VStack {
+                                            // Title for each story
+                                            Text("Popular Story Num: \(item)")
+                                                .font(.headline) // Applying a headline font style
+                                                .padding(.bottom, 5) // Space below the title
+                                            
+                                            // Story image
+                                            Image("ws_logo")
+                                                .resizable() // Makes the image resizable
+                                                .scaledToFit() // Scales the image to fit within its frame
+                                                .frame(width: 150)  // Sets a fixed width for the image
+                                            
+                                            // Story description
+                                            Text("This is a brief description of the popular story number \(item).")
+                                                .font(.footnote) // Applying a footnote font style
+                                                .padding(.top, 5) // Space above the description
+                                                .frame(width: 150) // Fixes the width to enable text wrapping
+                                        }
+                                        // Ensures the VStack doesn't expand more than its content
+                                        .fixedSize(horizontal: false, vertical: true)
                                     }
-                                    // Ensures the VStack doesn't expand more than its content
-                                    .fixedSize(horizontal: false, vertical: true)
                                 }
                                 .buttonStyle(BigButtonStyle()) // Custom button style
                             }
