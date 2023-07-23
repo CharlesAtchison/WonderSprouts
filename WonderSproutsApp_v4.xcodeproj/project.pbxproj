@@ -17,6 +17,7 @@
 		630449632A6A02C900AA5CEF /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630449622A6A02C900AA5CEF /* CustomPickerView.swift */; };
 		630449652A6A031500AA5CEF /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630449642A6A031500AA5CEF /* AppTheme.swift */; };
 		630449822A6B5F2F00AA5CEF /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630449812A6B5F2F00AA5CEF /* StoryView.swift */; };
+		631A1D982A6D8D09000941EC /* PopularStoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1D972A6D8D09000941EC /* PopularStoryViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		630449622A6A02C900AA5CEF /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
 		630449642A6A031500AA5CEF /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		630449812A6B5F2F00AA5CEF /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		631A1D972A6D8D09000941EC /* PopularStoryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularStoryViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				6304495E2A6A00FC00AA5CEF /* SettingsView.swift */,
 				630449602A6A010500AA5CEF /* ProfileView.swift */,
 				630449812A6B5F2F00AA5CEF /* StoryView.swift */,
+				631A1D972A6D8D09000941EC /* PopularStoryViews.swift */,
 				630449512A69FFEE00AA5CEF /* Assets.xcassets */,
 				630449532A69FFEE00AA5CEF /* WonderSproutsApp_v4.entitlements */,
 				630449542A69FFEE00AA5CEF /* Preview Content */,
@@ -161,6 +164,7 @@
 				630449502A69FFEC00AA5CEF /* ContentView.swift in Sources */,
 				6304495F2A6A00FC00AA5CEF /* SettingsView.swift in Sources */,
 				630449612A6A010500AA5CEF /* ProfileView.swift in Sources */,
+				631A1D982A6D8D09000941EC /* PopularStoryViews.swift in Sources */,
 				630449632A6A02C900AA5CEF /* CustomPickerView.swift in Sources */,
 				6304495D2A6A00B800AA5CEF /* StoryBuilderView.swift in Sources */,
 				630449822A6B5F2F00AA5CEF /* StoryView.swift in Sources */,
