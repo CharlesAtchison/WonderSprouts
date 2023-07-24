@@ -268,19 +268,21 @@ class Speak: NSObject, ObservableObject, AVAudioPlayerDelegate {
         if let player = audioPlayer, player.isPlaying {
             player.pause()
             isSpeaking = false
+            isPaused = true
         } else {
-            setupAudio(for: pageNumber)
-            playAudio(text: text)
+            if isPaused {
+                audioPlayer?.play()
+                isPaused = false
+            } else {
+                setupAudio(for: pageNumber)
+                playAudio(text: text)
+            }
         }
     }
 
     private func setupAudio(for page: Int) {
         // Adjust the page value.
         let adjustedPage = page + 1
-
-        // This will print all .wav paths in the bundle, which can help in debugging.
-        let paths = Bundle.main.paths(forResourcesOfType: "wav", inDirectory: nil)
-        print(paths)
         
         guard let path = Bundle.main.path(forResource: "story_audio_\(adjustedPage)", ofType: "wav") else {
             print("Audio file not found for adjusted page \(adjustedPage)")
@@ -306,12 +308,14 @@ class Speak: NSObject, ObservableObject, AVAudioPlayerDelegate {
     func stopSpeaking() {
         audioPlayer?.stop()
         isSpeaking = false
+        isPaused = false
         timer?.invalidate()
         timer = nil
     }
 
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         isSpeaking = false
+        isPaused = false
         timer?.invalidate()
         timer = nil
         currentHighlightedRange = NSRange(location: 0, length: 0)
@@ -335,7 +339,8 @@ class Speak: NSObject, ObservableObject, AVAudioPlayerDelegate {
         }
     }
     func getAttributedText(for text: String) -> NSAttributedString {
-        let attributedString = NSMutableAttributedString(string: text)
+        let attributedString = NSMutableAttributedString(string: text, attributes: [.font: UIFont.systemFont(ofSize: 30)])
+        attributedString.addAttribute(.foregroundColor, value: UIColor(named: "textColor")!, range: NSRange(location: 0, length: text.count))
         attributedString.addAttribute(.backgroundColor, value: UIColor.yellow, range: currentHighlightedRange)
         return attributedString
     }
