@@ -9,6 +9,9 @@ import SwiftUI
 
 struct PopularStoriesView: View {
     
+    // Adaptive Grid Layout
+    let columns: [GridItem] = Array(repeating: .init(.adaptive(minimum: 170, maximum: 200)), count: 2)  // maximum can be adjusted based on your design preference
+
     var body: some View {
         ZStack {
             
@@ -17,27 +20,18 @@ struct PopularStoriesView: View {
                 .ignoresSafeArea()
 
             VStack {
-                Text("Popular Stories") // Your title here
+                Text("Popular Stories")
                     .font(.largeTitle)
                     .foregroundColor(Color("textColor"))
-                    .padding(.top, 50) // Adjust this padding to position your title appropriately
+                    .padding(.top, 50)
 
                 ScrollView(.vertical) {
-                    LazyVStack {
-                        ForEach(0..<Int.max, id: \.self) { section in // Infinite sections for vertical scroll
-                            ScrollView(.horizontal, showsIndicators: false) {
-                                HStack {
-                                    Spacer()
-                                    LazyHStack {
-                                        ForEach(0..<2, id: \.self) { row in // 2 items for horizontal scroll
-                                            storyButton(for: section * 2 + row + 1)
-                                        }
-                                    }
-                                    Spacer()
-                                }
-                            }
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(0..<100, id: \.self) { story in  // Replace 10 with your story count or array count
+                            storyButton(for: story + 1)
                         }
                     }
+                    .padding()
                 }
             }
         }
@@ -49,20 +43,22 @@ struct PopularStoriesView: View {
             // Placeholder for button action
         }) {
             NavigationLink(destination: StoryView()) {
+                let frameWidth = CGFloat(170)
                 VStack {
-                    Text("Popular Story Num: \(storyNumber)")
+                    Text("Popular Story \(storyNumber)")
                         .font(.headline)
                         .padding(.bottom, 5)
+                        .frame(width: frameWidth)
                     
                     Image("ws_logo")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 150)
+                        .frame(width: frameWidth)
                     
                     Text("This is a brief description of the popular story number \(storyNumber).")
                         .font(.footnote)
                         .padding(.top, 5)
-                        .frame(width: 150)
+                        .frame(width: frameWidth)
                 }
                 .fixedSize(horizontal: false, vertical: true)
             }

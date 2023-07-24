@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    // Add any @State properties here if needed for dynamic UI behavior or storing user input
+    // Add any @State properties here if needed for dynamic UI behavior or stor ing user input
     
     var body: some View {
         NavigationStack {
