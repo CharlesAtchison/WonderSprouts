@@ -25,6 +25,7 @@
 		636484172A6F64880093D0C5 /* combined_story_male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 636484152A6F64880093D0C5 /* combined_story_male.mp3 */; };
 		6364841A2A6F679C0093D0C5 /* combined_story_female.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 636484182A6F679C0093D0C5 /* combined_story_female.mp3 */; };
 		6364841B2A6F679C0093D0C5 /* combined_story_female.json in Resources */ = {isa = PBXBuildFile; fileRef = 636484192A6F679C0093D0C5 /* combined_story_female.json */; };
+		6364841D2A70375F0093D0C5 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 6364841C2A70375F0093D0C5 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		636484152A6F64880093D0C5 /* combined_story_male.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = combined_story_male.mp3; sourceTree = "<group>"; };
 		636484182A6F679C0093D0C5 /* combined_story_female.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = combined_story_female.mp3; sourceTree = "<group>"; };
 		636484192A6F679C0093D0C5 /* combined_story_female.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = combined_story_female.json; sourceTree = "<group>"; };
+		6364841C2A70375F0093D0C5 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 		630449412A69FFEC00AA5CEF = {
 			isa = PBXGroup;
 			children = (
-				631A1D992A6DA34F000941EC /* MenuView.swift */,
+				6364841C2A70375F0093D0C5 /* readme.md */,
 				6304494C2A69FFEC00AA5CEF /* WonderSproutsApp_v4 */,
 				6304494B2A69FFEC00AA5CEF /* Products */,
 			);
@@ -81,6 +83,7 @@
 		6304494C2A69FFEC00AA5CEF /* WonderSproutsApp_v4 */ = {
 			isa = PBXGroup;
 			children = (
+				631A1D992A6DA34F000941EC /* MenuView.swift */,
 				6304494D2A69FFEC00AA5CEF /* WonderSproutsApp_v4App.swift */,
 				6304495C2A6A00B800AA5CEF /* StoryBuilderView.swift */,
 				6304494F2A69FFEC00AA5CEF /* ContentView.swift */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				630449562A69FFEE00AA5CEF /* Preview Assets.xcassets in Resources */,
+				6364841D2A70375F0093D0C5 /* readme.md in Resources */,
 				6364841A2A6F679C0093D0C5 /* combined_story_female.mp3 in Resources */,
 				636484132A6F487A0093D0C5 /* gigiTheGiraffe.mp3 in Resources */,
 				636484162A6F64880093D0C5 /* combined_story_male.json in Resources */,
