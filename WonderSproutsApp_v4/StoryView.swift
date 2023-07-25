@@ -218,7 +218,6 @@ struct StoryView: View {
                         .padding(.horizontal)
                 }
 
-
                 HStack(spacing: 50) {
                     if viewModel.currentPage == 1 {
                         Image(systemName: "arrow.left")
@@ -273,6 +272,11 @@ struct StoryView: View {
                     }
                 }
                 .padding(.bottom)
+
+                // Page identifier
+                Text("\(viewModel.currentPage) of \(viewModel.words.last?.pageNum ?? 1)")
+                    .foregroundColor(Color("textColor"))
+
             }
             .padding([.leading, .trailing])
         }
