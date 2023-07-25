@@ -90,7 +90,6 @@ struct CustomPickerView: View {
     
     private func buttonTapped(value: String) {
         if selectedValue == value {
-            print("test")
             selectedValue = nil
         } else {
             selectedValue = value
