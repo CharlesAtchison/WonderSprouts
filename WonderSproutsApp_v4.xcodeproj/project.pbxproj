@@ -19,8 +19,12 @@
 		630449822A6B5F2F00AA5CEF /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630449812A6B5F2F00AA5CEF /* StoryView.swift */; };
 		631A1D982A6D8D09000941EC /* PopularStoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1D972A6D8D09000941EC /* PopularStoryViews.swift */; };
 		631A1D9A2A6DA34F000941EC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1D992A6DA34F000941EC /* MenuView.swift */; };
-		631A1DC82A6EEB25000941EC /* complete_story.json in Resources */ = {isa = PBXBuildFile; fileRef = 631A1DC62A6EEB25000941EC /* complete_story.json */; };
-		631A1DC92A6EEB25000941EC /* complete_story.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 631A1DC72A6EEB25000941EC /* complete_story.mp3 */; };
+		636484122A6F487A0093D0C5 /* gigiTheGiraffe.json in Resources */ = {isa = PBXBuildFile; fileRef = 636484102A6F487A0093D0C5 /* gigiTheGiraffe.json */; };
+		636484132A6F487A0093D0C5 /* gigiTheGiraffe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 636484112A6F487A0093D0C5 /* gigiTheGiraffe.mp3 */; };
+		636484162A6F64880093D0C5 /* combined_story_male.json in Resources */ = {isa = PBXBuildFile; fileRef = 636484142A6F64870093D0C5 /* combined_story_male.json */; };
+		636484172A6F64880093D0C5 /* combined_story_male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 636484152A6F64880093D0C5 /* combined_story_male.mp3 */; };
+		6364841A2A6F679C0093D0C5 /* combined_story_female.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 636484182A6F679C0093D0C5 /* combined_story_female.mp3 */; };
+		6364841B2A6F679C0093D0C5 /* combined_story_female.json in Resources */ = {isa = PBXBuildFile; fileRef = 636484192A6F679C0093D0C5 /* combined_story_female.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +42,12 @@
 		630449812A6B5F2F00AA5CEF /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		631A1D972A6D8D09000941EC /* PopularStoryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularStoryViews.swift; sourceTree = "<group>"; };
 		631A1D992A6DA34F000941EC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		631A1DC62A6EEB25000941EC /* complete_story.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = complete_story.json; sourceTree = "<group>"; };
-		631A1DC72A6EEB25000941EC /* complete_story.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = complete_story.mp3; sourceTree = "<group>"; };
+		636484102A6F487A0093D0C5 /* gigiTheGiraffe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gigiTheGiraffe.json; sourceTree = "<group>"; };
+		636484112A6F487A0093D0C5 /* gigiTheGiraffe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gigiTheGiraffe.mp3; sourceTree = "<group>"; };
+		636484142A6F64870093D0C5 /* combined_story_male.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = combined_story_male.json; sourceTree = "<group>"; };
+		636484152A6F64880093D0C5 /* combined_story_male.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = combined_story_male.mp3; sourceTree = "<group>"; };
+		636484182A6F679C0093D0C5 /* combined_story_female.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = combined_story_female.mp3; sourceTree = "<group>"; };
+		636484192A6F679C0093D0C5 /* combined_story_female.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = combined_story_female.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,12 @@
 		631A1DC52A6E3401000941EC /* audiofiles */ = {
 			isa = PBXGroup;
 			children = (
-				631A1DC62A6EEB25000941EC /* complete_story.json */,
-				631A1DC72A6EEB25000941EC /* complete_story.mp3 */,
+				636484142A6F64870093D0C5 /* combined_story_male.json */,
+				636484152A6F64880093D0C5 /* combined_story_male.mp3 */,
+				636484192A6F679C0093D0C5 /* combined_story_female.json */,
+				636484182A6F679C0093D0C5 /* combined_story_female.mp3 */,
+				636484102A6F487A0093D0C5 /* gigiTheGiraffe.json */,
+				636484112A6F487A0093D0C5 /* gigiTheGiraffe.mp3 */,
 			);
 			path = audiofiles;
 			sourceTree = "<group>";
@@ -166,9 +178,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				630449562A69FFEE00AA5CEF /* Preview Assets.xcassets in Resources */,
-				631A1DC92A6EEB25000941EC /* complete_story.mp3 in Resources */,
+				6364841A2A6F679C0093D0C5 /* combined_story_female.mp3 in Resources */,
+				636484132A6F487A0093D0C5 /* gigiTheGiraffe.mp3 in Resources */,
+				636484162A6F64880093D0C5 /* combined_story_male.json in Resources */,
+				6364841B2A6F679C0093D0C5 /* combined_story_female.json in Resources */,
 				630449522A69FFEE00AA5CEF /* Assets.xcassets in Resources */,
-				631A1DC82A6EEB25000941EC /* complete_story.json in Resources */,
+				636484122A6F487A0093D0C5 /* gigiTheGiraffe.json in Resources */,
+				636484172A6F64880093D0C5 /* combined_story_male.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
