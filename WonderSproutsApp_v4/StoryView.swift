@@ -213,10 +213,11 @@ struct StoryView: View {
                     .padding(.top, 0)
                     .foregroundColor(Color("textColor"))
 
-                ScrollView(.vertical, showsIndicators: false) {
-                    AttributedText(attributedString: viewModel.getAttributedText(for: getCurrentPageText()))
-                        .padding(.horizontal)
-                }
+                ScrollingTextView(attributedString: viewModel.getAttributedText(for: getCurrentPageText()), highlightRange: $viewModel.currentHighlightedRange)
+                    .padding(.horizontal)
+                    .onReceive(viewModel.$lastHighlightedWordIndex) { _ in
+                        // This will trigger the updateUIView method in ScrollingTextView whenever the highlighted word changes.
+                    }
 
                 HStack(spacing: 50) {
                     if viewModel.currentPage == 1 {
@@ -307,5 +308,32 @@ struct AttributedText: UIViewRepresentable {
 struct StoryView_Previews: PreviewProvider {
     static var previews: some View {
         StoryView()
+    }
+}
+
+struct ScrollingTextView: UIViewRepresentable {
+    var attributedString: NSAttributedString
+    @Binding var highlightRange: NSRange
+    
+    func makeUIView(context: Context) -> UITextView {
+        let textView = UITextView()
+        textView.isScrollEnabled = true
+        textView.isUserInteractionEnabled = true // adjust as per your requirements
+        textView.isEditable = false
+        return textView
+    }
+    
+    func updateUIView(_ textView: UITextView, context: Context) {
+        textView.attributedText = attributedString
+        
+        DispatchQueue.main.async {
+            if let start = textView.position(from: textView.beginningOfDocument, offset: highlightRange.location),
+               let end = textView.position(from: start, offset: highlightRange.length),
+               let textRange = textView.textRange(from: start, to: end) {
+                
+                let rect = textView.firstRect(for: textRange)
+                textView.scrollRectToVisible(rect, animated: true)
+            }
+        }
     }
 }
