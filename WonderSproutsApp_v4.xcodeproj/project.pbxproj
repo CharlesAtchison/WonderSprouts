@@ -26,6 +26,7 @@
 		6364841A2A6F679C0093D0C5 /* combined_story_female.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 636484182A6F679C0093D0C5 /* combined_story_female.mp3 */; };
 		6364841B2A6F679C0093D0C5 /* combined_story_female.json in Resources */ = {isa = PBXBuildFile; fileRef = 636484192A6F679C0093D0C5 /* combined_story_female.json */; };
 		6364841D2A70375F0093D0C5 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 6364841C2A70375F0093D0C5 /* readme.md */; };
+		636484222A703AAF0093D0C5 /* ws_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 636484212A703AAF0093D0C5 /* ws_logo.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		636484182A6F679C0093D0C5 /* combined_story_female.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = combined_story_female.mp3; sourceTree = "<group>"; };
 		636484192A6F679C0093D0C5 /* combined_story_female.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = combined_story_female.json; sourceTree = "<group>"; };
 		6364841C2A70375F0093D0C5 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		636484212A703AAF0093D0C5 /* ws_logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ws_logo.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		630449412A69FFEC00AA5CEF = {
 			isa = PBXGroup;
 			children = (
+				6364841E2A703A780093D0C5 /* images */,
 				6364841C2A70375F0093D0C5 /* readme.md */,
 				6304494C2A69FFEC00AA5CEF /* WonderSproutsApp_v4 */,
 				6304494B2A69FFEC00AA5CEF /* Products */,
@@ -120,6 +123,14 @@
 				636484112A6F487A0093D0C5 /* gigiTheGiraffe.mp3 */,
 			);
 			path = audiofiles;
+			sourceTree = "<group>";
+		};
+		6364841E2A703A780093D0C5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				636484212A703AAF0093D0C5 /* ws_logo.jpeg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				6364841A2A6F679C0093D0C5 /* combined_story_female.mp3 in Resources */,
 				636484132A6F487A0093D0C5 /* gigiTheGiraffe.mp3 in Resources */,
 				636484162A6F64880093D0C5 /* combined_story_male.json in Resources */,
+				636484222A703AAF0093D0C5 /* ws_logo.jpeg in Resources */,
 				6364841B2A6F679C0093D0C5 /* combined_story_female.json in Resources */,
 				630449522A69FFEE00AA5CEF /* Assets.xcassets in Resources */,
 				636484122A6F487A0093D0C5 /* gigiTheGiraffe.json in Resources */,

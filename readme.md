@@ -1,6 +1,6 @@
 # WonderSprouts: A Children's Story Generator 🌱📖
 
-![WonderSprouts Logo](path_to_your_logo.png) 
+![WonderSprouts Logo](images/ws_logo.jpeg) 
 
 Welcome to **WonderSprouts**, a magical realm where every child embarks on an enchanting reading journey. With our interactive children's story generator, we don't just narrate a story; we bring each word to life, illuminating the path to literacy for young readers.
 
