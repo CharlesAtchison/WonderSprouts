@@ -320,6 +320,7 @@ struct ScrollingTextView: UIViewRepresentable {
         textView.isScrollEnabled = true
         textView.isUserInteractionEnabled = true // adjust as per your requirements
         textView.isEditable = false
+        textView.backgroundColor = UIColor.clear
         return textView
     }
     
